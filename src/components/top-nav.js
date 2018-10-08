@@ -42,11 +42,5 @@ export function TopNav(props) {
   );
 }
 
-// const mapStateToProps = state => {
-//   guesses: state.guesses,
-//   feedback: state.feedback,
-//   auralStatus:  state.feedback,
-//   correctAnswer:  state.feedback
-// }
 
 export default connect()(TopNav);

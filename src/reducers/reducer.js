@@ -38,12 +38,12 @@ export const reducer = (state = initialState, action) => {
         feedback
       ) ;
     };
-    if (makeGuess(action.guess)==='Please enter a valid number') {
-      return Object.assign({}, state, { feedback: makeGuess(action.guess) });
+    if (makeGuess(action.guess, state)==='Please enter a valid number') {
+      return Object.assign({}, state, { feedback: makeGuess(action.guess, state) });
     } else {
       return (Object.assign({}, state, {
         guesses: [...state.guesses, action.guess],
-        feedback: makeGuess(action.guess) }));
+        feedback: makeGuess(action.guess, state) }));
     }
   } else {
     return state;
