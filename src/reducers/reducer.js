@@ -2,7 +2,7 @@ import { NEW_GAME, MAKE_GUESS } from '../actions/actions';
 
 const initialState = {
   guesses: [],
-  feedback: 'Make your guess!',
+  feedback: 'Make your guess! (working)',
   auralStatus: '',
   correctAnswer: Math.floor(Math.random() * 100) + 1
 };

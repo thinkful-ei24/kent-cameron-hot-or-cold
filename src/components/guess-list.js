@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 import './guess-list.css';
 
@@ -17,7 +17,7 @@ export function GuessList(props) {
   );
 }
 const mapStateToProps = state => {
-  return {guesses: state.guesses}
-}
+  return { guesses: state.guesses };
+};
 
 export default connect(mapStateToProps)(GuessList);
